@@ -1,0 +1,25 @@
+***Configuración***:
+
+Cambiar en su archivo de configuración de php 'php.ini':
+	upload_max_filesize = 100M
+	post_max_size = 100M
+
+Cambiar en su archivo de configuración de MySQL 'my.ini':
+	max_allowed_packet = 128M
+	Y si le aparece: wait_timeout = 3600
+
+Y reiniciar ambos.
+
+Cambiar la contraseña en 'conexion.php'
+
+***Notas***:
+
+Los archivos descargados quedan en php\descargas.
+
+Incluyo una base de datos (basevideos.sql) con archivos y 2 videos precargados.
+
+Si se intenta subir videos muy pesados o muy largos, va a tardar demasiado tiempo.
+
+Abrir 'index.html' en 'Microsoft Edge' para reproducir videos directamente en el navegador
+(No se por qué no funciona en Chrome ni Firefox). De lo contrario, igual se pueden descargar y
+reproducir en el sistema.
